@@ -3,36 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:paddingBottom="40dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/epfcInpLyt"
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/btnEnterDetails"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        android:text="Enter details"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/excelUploadBtn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/epfcInp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="select your file"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/epfcRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnterDetails"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </com.google.android.material.textfield.TextInputLayout>
 
-
-    <ImageButton
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/excelUploadBtn"
-        android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:clickable="true"
-
         android:src="@drawable/attach_file_ic"
-        app:layout_constraintTop_toBottomOf="@+id/epfcInpLyt"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toEndOf="@+id/btnEnterDetails"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

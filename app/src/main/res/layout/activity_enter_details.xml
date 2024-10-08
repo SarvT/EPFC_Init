@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterDetailsActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/custNameLyt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/custName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="enter name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custPhoneLyt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custNameLyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter phone number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kwhLyt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kwh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter kwh" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/leadLyt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBottomOf="@id/kwhLyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter lead" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lagLyt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leadLyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter lag" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateLyt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custPhoneLyt">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/datePick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="select date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
