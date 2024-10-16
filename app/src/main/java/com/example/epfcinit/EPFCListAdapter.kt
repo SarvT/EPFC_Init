@@ -1,5 +1,6 @@
 package com.example.epfcinit
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class EPFCListAdapter(var dataset:List<EPFCData>): RecyclerView.Adapter<EPFCListAdapter.ViewHolder>() {
+class EPFCListAdapter(var dataset:MutableList<EPFCData>): RecyclerView.Adapter<EPFCListAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
         var cNameView:TextView = itemView.findViewById(R.id.nameTextView)
         var cNumView:TextView = itemView.findViewById(R.id.numberTextView)
@@ -47,7 +48,8 @@ class EPFCListAdapter(var dataset:List<EPFCData>): RecyclerView.Adapter<EPFCList
         return dataset.size
     }
 
-    fun update(newDataset: List<EPFCData>){
+    @SuppressLint("NotifyDataSetChanged")
+    fun update(newDataset: MutableList<EPFCData>){
         dataset = newDataset
         notifyDataSetChanged()
     }

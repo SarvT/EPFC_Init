@@ -19,7 +19,7 @@
                 android:id="@+id/custName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="enter name" />
+                android:hint="NAME" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,7 +36,7 @@
             android:id="@+id/custPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="enter phone number" />
+            android:hint="Phone Number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,7 +52,7 @@
             android:id="@+id/kwh"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="enter kwh" />
+            android:hint="KWH" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +67,7 @@ app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBott
             android:id="@+id/lead"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="enter lead" />
+            android:hint="LEAD" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,7 +84,7 @@ app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBott
             android:id="@+id/lag"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="enter lag" />
+            android:hint="LAG" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,7 +100,17 @@ app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/datePick"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="select date" />
+        android:hint="DD/MM/YYYY" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Details"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,10 @@ poi = "5.2.2"
 poi-ooxml = "5.3.0"
 #excel
 
+
+sqlite ="2.1.0"
+#database
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -27,6 +31,9 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 poi = { group = "org.apache.poi", name = "poi", version.ref = "poi" }
 ooxml = { group = "org.apache.poi", name = "poi-ooxml", version.ref = "poi-ooxml" }
 #excel
+
+sqlite = { group = "androidx.sqlite", name = "sqlite", version.ref = "sqlite" }
+#database
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

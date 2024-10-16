@@ -55,4 +55,7 @@ dependencies {
 //    implementation 'org.apache.poi:poi-ooxml:5.2.2'
     implementation (libs.poi)
     implementation(libs.ooxml)
+
+//    database
+    implementation(libs.sqlite)
 }

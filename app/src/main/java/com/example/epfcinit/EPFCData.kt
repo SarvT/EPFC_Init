@@ -1,8 +1,5 @@
 package com.example.epfcinit
 
-import org.apache.poi.ss.usermodel.Cell
-import java.util.Date
-
 class EPFCData(
     custName:String,
     custNum:String,
